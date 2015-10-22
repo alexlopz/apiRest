@@ -1,0 +1,13 @@
+{
+	"name": "APIRest",
+	"author": "Alex Lopez",
+	"version": "1.0.0",
+	"descripcion": "Mi primera APIRest",
+	"main": "server.js",
+	"dependencies": {
+		"express": "latest",
+		"mongoose": "latest",
+		"method-override": "latest",
+		"body-parser":"latest"
+	}
+}
