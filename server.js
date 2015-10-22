@@ -1,7 +1,7 @@
 var express = require('express');
 	app = express();
-	bodyParser = require('body-parser');
-	methodOverride = require('method-override');
+	http = require("http");
+	server = http.createServer(app);
 	mongoose = require('mongoose');
 
 
@@ -17,6 +17,12 @@ router.get('/', function(req, res) {
 
 app.use(router);
 
-app.listen(3000, function() {  
-  console.log("Servidor node corriendo en: http://localhost:3000");
-});
+mongoose.connect('mongodb://localhost/colors', function(err, res) {  
+  if(err) {
+    console.log('ERROR: connecting to Database. ' + err);
+  }
+
+	app.listen(3000, function() {  
+  		console.log("Servidor node corriendo en: http://localhost:3000");
+	});
+});	
