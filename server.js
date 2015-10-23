@@ -1,6 +1,8 @@
 var express = require('express');
 	app = express();
 	http = require("http");
+	bodyParser  = require("body-parser");
+    methodOverride = require("method-override");
 	server = http.createServer(app);
 	mongoose = require('mongoose');
 
