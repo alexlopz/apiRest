@@ -14,7 +14,7 @@ app.use(methodOverride());
 var router = express.Router();
 
 router.get('/', function(req, res) {  
-   res.send("Hola mundo, mi server node esta funcionando!!");
+   res.send("Hola todos!!!!!!!!!Mi server node esta funcionando!!");
 });
 
 app.use(router);
